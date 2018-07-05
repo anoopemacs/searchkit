@@ -91,27 +91,7 @@ export class FacetFilter<T extends FacetFilterProps> extends SearchkitComponent<
   }
 
   render() {
-    const { listComponent, containerComponent, showCount, title, id, countFormatter } = this.props
-    return renderComponent(containerComponent, {
-      title,
-      className: id ? `filter--${id}` : undefined,
-      disabled: !this.hasOptions()
-    }, [
-      renderComponent(listComponent, {
-        key:"listComponent",
-        items: this.getItems(),
-        itemComponent:this.props.itemComponent,
-        selectedItems: this.getSelectedItems(),
-        toggleItem: this.toggleFilter.bind(this),
-        setItems: this.setFilters.bind(this),
-        docCount: this.accessor.getDocCount(),
-        showCount,
-        translate:this.translate,
-        countFormatter
-      }),
-      this.renderShowMore(),
-      <h1>MyEdit007</h1>
-    ]);
+    return <h1>FacetFilter007</h1>
   }
 
   renderShowMore() {

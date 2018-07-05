@@ -109,7 +109,8 @@ export class FacetFilter<T extends FacetFilterProps> extends SearchkitComponent<
         translate:this.translate,
         countFormatter
       }),
-      this.renderShowMore()
+      this.renderShowMore(),
+      <h1>MyEdit007</h1>
     ]);
   }
 
